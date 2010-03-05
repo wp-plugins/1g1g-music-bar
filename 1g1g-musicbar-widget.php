@@ -19,7 +19,7 @@
 Plugin Name:  1g1g music bar widget
 Plugin URI:   http://www.1g1g.com/
 Description:  A widget of 1g1g music bar.
-Version:      0.1
+Version:      0.1.1
 Author:       cynic
 Author URI:   http://www.1g1g.com/	
 */

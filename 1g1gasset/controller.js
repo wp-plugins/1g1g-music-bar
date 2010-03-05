@@ -14,6 +14,7 @@ var commander_1g1g = get1gCommander();
 var playerState; 
 
 controllerInit();
+
 function controllerInit()
 {
 	controllerReset();
