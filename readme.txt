@@ -1,5 +1,5 @@
 === 1g1g Music Bar Widget ===
-Contributors: cynic
+Contributors: 1g1g.com
 Tags: 1g1g, music, widget
 Requires at least: 2.5
 Tested up to: 2.9.1
