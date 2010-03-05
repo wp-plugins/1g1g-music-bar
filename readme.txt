@@ -6,12 +6,12 @@ Tested up to: 2.9.1
 Stable Tag: /trunk
 
 A simple music bar is used to control a 1g1g player, show the lyric of the playing song.
-Òà¸èÒôÀÖÀ¸£¬¿ØÖÆÒà¸è²¥·Å£¬ÏÔÊ¾µ±Ç°¸è´Ê¡£
+äº¦æ­ŒéŸ³ä¹æ ï¼ŒæŽ§åˆ¶äº¦æ­Œæ’­æ”¾ï¼Œæ˜¾ç¤ºå½“å‰æ­Œè¯ã€‚
 
 == Description ==
 
 The widget can be installed in the sidebar of a blog powered by Wordpress. While the blog is loaded, the widget can open or control a 1g1g player and show the lyric of the playing song.
-´ËÐ¡¹¤¾ß¿É°²×°ÔÚÓÉWordPressÖ§³ÖµÄ²©¿ÍÏµÍ³µÄ²à±ßÀ¸ÖÐ¡£ÓÃ»§ä¯ÀÀ²©¿ÍÊ±£¬ÏÔÊ¾Òà¸è²¥·Å¸èÇúµÄµ±Ç°¸è´Ê¡£²¢ÇÒ£¬Ëü¿ÉÒÔ¼òµ¥µØ¿ØÖÆÒà¸èµÄ²¥·Å½ø³Ì¡£
+æ­¤å°å·¥å…·å¯å®‰è£…åœ¨ç”±WordPressæ”¯æŒçš„åšå®¢ç³»ç»Ÿçš„ä¾§è¾¹æ ä¸­ã€‚ç”¨æˆ·æµè§ˆåšå®¢æ—¶ï¼Œæ˜¾ç¤ºäº¦æ­Œæ’­æ”¾æ­Œæ›²çš„å½“å‰æ­Œè¯ã€‚å¹¶ä¸”ï¼Œå®ƒå¯ä»¥ç®€å•åœ°æŽ§åˆ¶äº¦æ­Œçš„æ’­æ”¾è¿›ç¨‹ã€‚
 
 == Installation ==
 
@@ -22,9 +22,9 @@ Or
 	2. Activate the plugin through the *Plugins* menu in WordPress.
 	3. Select a favorite color of the widget in the widgets admin page.
 	
-[°²×°·½·¨]
-* ÔÚ¹ÜÀíÃæ°åÖÐÑ¡Ôñ¡°²å¼þ¡±->¡°Ìí¼ÓÐÂ²å¼þ¡±£¬ËÑË÷¡°1g1g¡±£¬¿´µ½¡°1g1g Music Bar Widget¡±£¬µã»÷¡°°²×°¡±¡£ÔÚµ¯³öÒ³ÃæµÄÓÒÉÏ½Çµã»÷¡°ÏÖÔÚ°²×°¡±¡£°²×°Íê³Éºóµã»÷¡°¼¤»î²å¼þ¡±¡£
-* ÔÚ¡°Íâ¹Û¡±->¡°Ð¡¹¤¾ß¡±ÖÐ£¬¿´µ½¡°Music bar from 1g1g¡±£¬½«ËüÍÏ×§ÖÁÓÒ²à±ßÀ¸ÖÐÄúÏ£ÍûµÄÎ»ÖÃ¡£µã»÷Ð¡¹¤¾ßÓÒ·½µÄÏÂÀ­¼ýÍ·£¬¿ÉÒÔ¶ÔÆä½øÐÐÅäÖÃ£¬µ±Ç°Ìá¹©¡°³õÊ¼ÎÄ×Ö¡±¡¢¡°±³¾°ÑÕÉ«¡±µÈÅäÖÃÑ¡Ïî¡£
+[å®‰è£…æ–¹æ³•]
+* åœ¨ç®¡ç†é¢æ¿ä¸­é€‰æ‹©â€œæ’ä»¶â€->â€œæ·»åŠ æ–°æ’ä»¶â€ï¼Œæœç´¢â€œ1g1gâ€ï¼Œçœ‹åˆ°â€œ1g1g Music Bar Widgetâ€ï¼Œç‚¹å‡»â€œå®‰è£…â€ã€‚åœ¨å¼¹å‡ºé¡µé¢çš„å³ä¸Šè§’ç‚¹å‡»â€œçŽ°åœ¨å®‰è£…â€ã€‚å®‰è£…å®ŒæˆåŽç‚¹å‡»â€œæ¿€æ´»æ’ä»¶â€ã€‚
+* åœ¨â€œå¤–è§‚â€->â€œå°å·¥å…·â€ä¸­ï¼Œçœ‹åˆ°â€œMusic bar from 1g1gâ€ï¼Œå°†å®ƒæ‹–æ‹½è‡³å³ä¾§è¾¹æ ä¸­æ‚¨å¸Œæœ›çš„ä½ç½®ã€‚ç‚¹å‡»å°å·¥å…·å³æ–¹çš„ä¸‹æ‹‰ç®­å¤´ï¼Œå¯ä»¥å¯¹å…¶è¿›è¡Œé…ç½®ï¼Œå½“å‰æä¾›â€œåˆå§‹æ–‡å­—â€ã€â€œèƒŒæ™¯é¢œè‰²â€ç­‰é…ç½®é€‰é¡¹ã€‚
 
 == Changelog ==
 
