@@ -24,7 +24,7 @@ Author:       cynic
 Author URI:   http://www.1g1g.com/	
 */
 
-	function yige_musicbar_widget($args, $widget_args = 1) {
+	function music_bar_1g1g_widget($args, $widget_args = 1) {
 		
 		extract( $args, EXTR_SKIP );
 		if ( is_numeric($widget_args) )
@@ -32,7 +32,7 @@ Author URI:   http://www.1g1g.com/
 		$widget_args = wp_parse_args( $widget_args, array( 'number' => -1 ) );
 		extract( $widget_args, EXTR_SKIP );
 	
-		$options = get_option('yige_musicbar_widget');
+		$options = get_option('music_bar_1g1g_widget');
 		if ( !isset($options[$number]) ) 
 			return;
 
@@ -69,7 +69,7 @@ Author URI:   http://www.1g1g.com/
 	}
 	
 	
-	function yige_musicbar_widget_control($widget_args) {
+	function music_bar_1g1g_widget_control($widget_args) {
 	
 		global $wp_registered_widgets;
 		static $updated = false;
@@ -79,7 +79,7 @@ Author URI:   http://www.1g1g.com/
 		$widget_args = wp_parse_args( $widget_args, array( 'number' => -1 ) );
 		extract( $widget_args, EXTR_SKIP );
 	
-		$options = get_option('yige_musicbar_widget');
+		$options = get_option('music_bar_1g1g_widget');
 		
 		if ( !is_array($options) )	
 			$options = array();
@@ -95,22 +95,22 @@ Author URI:   http://www.1g1g.com/
 				$this_sidebar = array();
 	
 			foreach ( (array) $this_sidebar as $_widget_id ) {
-				if ( 'yige_musicbar_widget' == $wp_registered_widgets[$_widget_id]['callback'] && isset($wp_registered_widgets[$_widget_id]['params'][0]['number']) ) {
+				if ( 'music_bar_1g1g_widget' == $wp_registered_widgets[$_widget_id]['callback'] && isset($wp_registered_widgets[$_widget_id]['params'][0]['number']) ) {
 					$widget_number = $wp_registered_widgets[$_widget_id]['params'][0]['number'];
-					if ( !in_array( "yige_musicbar_widget-$widget_number", $_POST['widget-id'] ) ) 
+					if ( !in_array( "music_bar_1g1g_widget-$widget_number", $_POST['widget-id'] ) ) 
 						unset($options[$widget_number]);
 				}
 			}
 	
-			foreach ( (array) $_POST['yige_musicbar_widget'] as $widget_number => $yige_musicbar_widget ) {
-				$title = strip_tags(stripslashes($yige_musicbar_widget['title_value']));
-				$bgcolor = $yige_musicbar_widget['bgcolor_value'];
-				$framecolor = $yige_musicbar_widget['framecolor_value'];
-				$textcolor = $yige_musicbar_widget['textcolor_value'];
+			foreach ( (array) $_POST['music_bar_1g1g_widget'] as $widget_number => $music_bar_1g1g_widget ) {
+				$title = strip_tags(stripslashes($music_bar_1g1g_widget['title_value']));
+				$bgcolor = $music_bar_1g1g_widget['bgcolor_value'];
+				$framecolor = $music_bar_1g1g_widget['framecolor_value'];
+				$textcolor = $music_bar_1g1g_widget['textcolor_value'];
 				$options[$widget_number] = compact( 'title', 'textcolor', 'bgcolor', 'framecolor' );
 			}
 	
-			update_option('yige_musicbar_widget', $options);
+			update_option('music_bar_1g1g_widget', $options);
 			$updated = true;
 		}
 	
@@ -131,50 +131,50 @@ Author URI:   http://www.1g1g.com/
 	?>
 	<table cellspacing="10px" cellpadding="0" border="0" >
 	<tr>
-		<td align="right" >默认的文字</td>
-		<td ><input id="title_value_<?php echo $number; ?>" name="yige_musicbar_widget[<?php echo $number; ?>][title_value]" type="text" value="<?=$title?>" /></td>
+		<td align="right" >初始文字</td>
+		<td ><input id="title_value_<?php echo $number; ?>" name="music_bar_1g1g_widget[<?php echo $number; ?>][title_value]" type="text" value="<?=$title?>" /></td>
 	</tr>
 	<tr>
 		<td align="right" >文字颜色</td>
-		<td ><input id="textcolor_value_<?php echo $number; ?>" name="yige_musicbar_widget[<?php echo $number; ?>][textcolor_value]" type="text" value="<?=$textcolor?>" /></td>
+		<td ><input id="textcolor_value_<?php echo $number; ?>" name="music_bar_1g1g_widget[<?php echo $number; ?>][textcolor_value]" type="text" value="<?=$textcolor?>" /></td>
 	</tr>
 	<tr>
 		<td align="right" >背景颜色</td>
-		<td ><input id="bgcolor_value_<?php echo $number; ?>" name="yige_musicbar_widget[<?php echo $number; ?>][bgcolor_value]" type="text" value="<?=$bgcolor?>" /></td>
+		<td ><input id="bgcolor_value_<?php echo $number; ?>" name="music_bar_1g1g_widget[<?php echo $number; ?>][bgcolor_value]" type="text" value="<?=$bgcolor?>" /></td>
 	</tr>
 	<tr>
 		<td align="right" >边框颜色</td>
-		<td ><input id="framecolor_value_<?php echo $number; ?>" name="yige_musicbar_widget[<?php echo $number; ?>][framecolor_value]" type="text" value="<?=$framecolor?>" /></td>
+		<td ><input id="framecolor_value_<?php echo $number; ?>" name="music_bar_1g1g_widget[<?php echo $number; ?>][framecolor_value]" type="text" value="<?=$framecolor?>" /></td>
 	</tr>
 	</table>
-    <input type="hidden" name="yige_musicbar_widget[<?php echo $number; ?>][submit]" value="1" />
+    <input type="hidden" name="music_bar_1g1g_widget[<?php echo $number; ?>][submit]" value="1" />
     
 	<?php
 	}
 	
 	
-	function yige_musicbar_widget_register() {
-		if ( !$options = get_option('yige_musicbar_widget') )
+	function music_bar_1g1g_widget_register() {
+		if ( !$options = get_option('music_bar_1g1g_widget') )
 			$options = array();
-		$widget_ops = array('classname' => 'yige_musicbar_widget', 'description' => __('Yige musicbar widget form'));
-		$control_ops = array('width' => 400, 'height' => 350, 'id_base' => 'yige_musicbar_widget');
-		$name = __('Yige Musicbar Widget');
+		$widget_ops = array('classname' => 'music_bar_1g1g_widget', 'description' => __('Music bar widget from 1g1g (亦歌音乐栏)'));
+		$control_ops = array('width' => 400, 'height' => 350, 'id_base' => 'music_bar_1g1g_widget');
+		$name = __('Music bar from 1g1g (亦歌音乐栏)');
 	
 		$id = false;
 		
 		foreach ( (array) array_keys($options) as $o ) {
 				
-			$id = "yige_musicbar_widget-$o";
-			wp_register_sidebar_widget($id, $name, 'yige_musicbar_widget', $widget_ops, array( 'number' => $o ));
-			wp_register_widget_control($id, $name, 'yige_musicbar_widget_control', $control_ops, array( 'number' => $o ));
+			$id = "music_bar_1g1g_widget-$o";
+			wp_register_sidebar_widget($id, $name, 'music_bar_1g1g_widget', $widget_ops, array( 'number' => $o ));
+			wp_register_widget_control($id, $name, 'music_bar_1g1g_widget_control', $control_ops, array( 'number' => $o ));
 		}
 		
 		if ( !$id ) {
-			wp_register_sidebar_widget( 'yige_musicbar_widget-1', $name, 'yige_musicbar_widget', $widget_ops, array( 'number' => -1 ) );
-			wp_register_widget_control( 'yige_musicbar_widget-1', $name, 'yige_musicbar_widget_control', $control_ops, array( 'number' => -1 ) );
+			wp_register_sidebar_widget( 'music_bar_1g1g_widget-1', $name, 'music_bar_1g1g_widget', $widget_ops, array( 'number' => -1 ) );
+			wp_register_widget_control( 'music_bar_1g1g_widget-1', $name, 'music_bar_1g1g_widget_control', $control_ops, array( 'number' => -1 ) );
 		}
 	}
 
-add_action('init', yige_musicbar_widget_register, 1);
+add_action('init', music_bar_1g1g_widget_register, 1);
 
 ?>
