@@ -1,11 +1,5 @@
 ﻿var defaultDisplayText = document.getElementById("displayText_1g1g").innerHTML; //默认显示的文字
 var playerUrl = " http://www.1g1g.com/" //打开播放器的地址
-document.write('<div style="width:0;height:0;position:absolute;top:0;left:0;">');
-document.write('<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,0,0" id="commander1g1g" width="100%" height="100%">');	
-document.write('<param name="movie" value="wp-content/plugins/1g1g-music-bar/1g1gasset/commander.swf"/>');	
-document.write('<param name="allowScriptAccess" value ="always" />');	
-document.write('<EMBED src="wp-content/plugins/1g1g-music-bar/1g1gasset/commander.swf" allowScriptAccess="always" width="100%" height="100%" name="commander1g1g"  type="application/x-shockwave-flash" PLUGINSPAGE="http://www.macromedia.com/go/getflashplayer" />');	
-document.write('</object></div>');
 var playPauseBtn_1g1g = document.getElementById("playPauseBtn_1g1g");
 var nextBtn_1g1g = document.getElementById("nextBtn_1g1g");
 var displayText_1g1g = document.getElementById("displayText_1g1g");

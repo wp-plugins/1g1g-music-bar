@@ -19,7 +19,7 @@
 Plugin Name:  1g1g music bar widget
 Plugin URI:   http://www.1g1g.com/
 Description:  A widget of 1g1g music bar.
-Version:      0.1.1
+Version:      0.1.2
 Author:       cynic
 Author URI:   http://www.1g1g.com/	
 */
@@ -51,6 +51,13 @@ Author URI:   http://www.1g1g.com/
 		if ( ! defined( 'WP_PLUGIN_DIR' ) )
       		define( 'WP_PLUGIN_DIR', WP_CONTENT_DIR . '/plugins' );
       	$mbpath = WP_PLUGIN_URL.'/'.dirname(plugin_basename(__FILE__)); ?>
+      	<div style="width:0;height:0;position:absolute;top:0;left:0;">
+      		<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=9,0,0,0" id="commander1g1g" width="100%" height="100%">
+      				<param name="movie" value="<?php echo $mbpath.'/1g1gasset/commander.swf'; ?>"/>
+      				<param name="allowScriptAccess" value ="always" />
+      				<EMBED src="<?php echo $mbpath.'/1g1gasset/commander.swf'; ?>" allowScriptAccess="always" width="100%" height="100%" name="commander1g1g"  type="application/x-shockwave-flash" PLUGINSPAGE="http://www.macromedia.com/go/getflashplayer" />
+      		</object>
+      	</div>
 		<table id="controller_1g1g" cellspacing="4px" cellpadding="0" border="0" style="table-layout:fixed;width:100%;height:24px;cursor:pointer;background-color:<?php echo $bgcolor; ?>;border:solid 1px <?php echo $framecolor; ?>;"> 
 			<tr>
 				<td id="playPauseBtn_1g1g" style="width:16px;height:16px;background-image:url('<?php echo $mbpath; ?>/1g1gasset/play-pause-next.gif');cursor:pointer;background-position:0px 0px;overflow:hidden;">
