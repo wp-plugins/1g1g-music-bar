@@ -30,6 +30,9 @@ Or
 
 == Changelog ==
 
+= 0.1.2 =
+* Replace absolute path with the path judeged dynamically.
+
 = 0.1.0 =
 * Basic music bar implemented.
 
@@ -40,9 +43,14 @@ No, the music bar will detect 1g1g web automatically. If the web hasn't been ope
 
 == Upgrade Notice ==
 
+= 0.1.2=
+* Path problem is settled down.
+
 = 0.1.0 =
 * First version released.
 
 == Screenshots ==
 
-1. The style of the music bar is shown in http://public.1g1g.com/musicbar/intro.html
+1. The style of the music bar is shown in http://www.1g1g.com/extensions.html#wordpress
+
+

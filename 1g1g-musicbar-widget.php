@@ -1,5 +1,5 @@
 <?php
-/*  Copyright 2010  cynic  (email : 1g1g.founder@gmail.com)
+/*  Copyright 2010  1g1g.com  (email : 1g1g.founder@gmail.com)
 
     This program is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License, version 2, as 
@@ -17,11 +17,10 @@
 
 /*
 Plugin Name:  1g1g music bar widget
-Plugin URI:   http://www.1g1g.com/
+Plugin URI:   http://www.1g1g.com/extensions.html#wordpress
 Description:  A widget of 1g1g music bar.
 Version:      0.1.2
-Author:       cynic
-Author URI:   http://www.1g1g.com/	
+Author:       1g1g.com	
 */
 
 	function music_bar_1g1g_widget($args, $widget_args = 1) {
